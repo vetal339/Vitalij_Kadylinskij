@@ -9,11 +9,10 @@
 
 <table width="700" border="0">
     <col width="50%"> <col width="50%">
+    <form action="http://fe.it-academy.by/TestForm.php">
     <caption><td><b>Простая форма поиска с вариантами:</b></td><td><b>Простая форма поиска с вариантами:</b></td></caption>
-        
-<tr>
+    <tr>
     <td>
-        <form action="http://fe.it-academy.by/TestForm.php">
             <fieldset>
                        <legend>Строка поиска</legend>
                        <input type="text" name="text" maxlength="10">
@@ -30,15 +29,15 @@
                 </p>
                 <em>Длина запроса не более 10 символов</em>
             </fieldset>
-        </form>
-    </td>
-    <form action="http://fe.it-academy.by/TestForm.php">
+        </td>
+    </form>
     <td>
-        <fieldset>
-            <legend>Строка поиска</legend>
-            <input type="text" name="text" placeholder="обязательное поле" required>*
-            <input type="submit" value="Искать">
-                <p>
+        <form action="http://fe.it-academy.by/TestForm.php">
+             <fieldset>
+                <legend>Строка поиска</legend>
+                <input type="text" name="text" placeholder="Обязательное поле" required>*
+                <input type="submit" value="Искать">
+                 <p>
                     <label >
                          <input type="radio" name="radio_group" 
                          value="value_01" id="checkbox_group1_0"checked>на сайте
@@ -48,13 +47,13 @@
                          value="value_02" id="checkbox_group2_0"checked>в google
                     </label>
                 </p>
-                <em>*-обязательное поле<br>
+                     <em>*-обязательное поле<br>
                      Автофокус в поле поиска
                 </em>
-        </fieldset>
+            </fieldset>
+        </form>
     </td>
-    </tr>
-</form>
+</tr>
 <form action="http://fe.it-academy.by/TestForm.php">
     <caption><td><b>Простая форма авторизации:</b></td><td><b> Опрос(голосование):</b></td></caption>
 <tr>
@@ -98,18 +97,18 @@
 </td>    
 </tr>
 </form>
-<form action="http://fe.it-academy.by/TestForm.php" method="POST" name="e-mail">
+<form action="http://fe.it-academy.by/TestForm.php" method="POST" >
     <caption><td><b>Отзыв:</b></td><td><b>Выпадающий и мульти списки:</b></td></caption>
-<tr>
+    <tr>
     <td>
         <fieldset>
             <legend>Оставте Ваш отзыв</legend>
-            <input type="text" name="Имя" placeholder; required>*Имя
+            <input type="text" name="name" placeholder; required>*Имя
             <input type="text" name="e-mail" placeholder; required>*e-mail
             <textarea name="text_area"lang="ru">
                 Форма отправки
             </textarea><br>
-            <input type="submit" name="Имя" name="e-mail"><br>
+            <input type="submit" name="name" name="e-mail"><br>
                 <em>*-обязательное поле<br>
                 поле email-с проверкой<br>
                 метод POST</em>
@@ -136,8 +135,44 @@
                     
             </fieldset>
         </td>
-    </form>
-</tr>
+    </tr>
+</form>
+<form action="http://fe.it-academy.by/TestForm.php" method="POST" enctype="multipart/form-data">
+    <caption><td><b>Загрузка файла на сервер:</b></td><td><b>Валидация данных HTML5:</b></td></caption>
+    <tr>
+        <td>
+            <fieldset>
+                <legend>Upload</legend>
+                Файл: <br>
+                <input type="file" name="file_Field" dir="ltr"><br>
+                Срок хранения (года): <br>
+                <input type="text" name="text">
+                <input type="submit" name="file_Field" value="загрузить"><br>
+                <em>Метод POST <br>
+                    В теге form используйте атребут <br>
+                    enctype="multipart/form-data" для отправки <br>
+                    файла на сервер
+                </em>
+                
+    
+
+            </fieldset>
+        </td>
+</form>
+<form action="http://fe.it-academy.by/TestForm.php" method="POST">
+    <td>
+        <fieldset>
+            <legend>Строка поиска</legend>
+            <input type="text" name="text" lang="ru" placeholder="Только русские буквы"><br>
+            <em>Телефонный номер в формате <br>
+                +XXX-XX-XXXXXX, где X - любое число
+            </em>
+            <input type="nomber" name="nomber" pattern='[0-9]' placeholder="+375-29-1234567"><br>
+            <input type="submit" name="text" name="nomber">
+
+        </fieldset>
+    </td>
+    </tr>
 </form>
 </table>
 </body>

@@ -1,0 +1,22 @@
+h1{
+    text-align: right;
+    font-size: medium;
+}
+.div1{
+    font-style: italic;
+    text-align: right;
+}
+.title{
+    text-align: right;
+}
+.lasttitle{
+    text-align: right;
+    font-style: italic;
+}
+p{
+    text-decoration: underline;
+     @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap')
+
+
+
+}
