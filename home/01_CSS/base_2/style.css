@@ -9,14 +9,21 @@ h1{
 .title{
     text-align: right;
 }
-.lasttitle{
+.ltitle{
     text-align: right;
     font-style: italic;
 }
-p{
+.p1{
     text-decoration: underline;
-     @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap')
-
-
+    text-indent: 30px;
+    font-family: 'Bad Script', cursive;
+    font-weight: 900;
+}
+.p2{
+    font-family: 'Bad Script', cursive;
+    text-indent: 30px;
+}
+.end{
+    text-align: left;
 
 }

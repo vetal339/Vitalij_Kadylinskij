@@ -1,0 +1,16 @@
+h1, div {
+    text-align: right;
+    font-size: medium;
+}
+.text{
+    font-style: italic;
+}
+p{
+    text-indent: 30px;
+    font-family: 'Bad Script', cursive;
+
+}
+.txt{
+    text-decoration: underline;
+    font-weight: 900;
+}
