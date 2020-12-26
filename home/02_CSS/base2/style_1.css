@@ -1,0 +1,10 @@
+li{
+    list-style: lower-roman;
+}
+.title{
+    list-style: upper-roman ;
+    font-weight: bold;
+}
+.w{
+    width: 350px;
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div.MenuLevel1 {
+            width: 100px
+        }
+        div.MenuLevel1 > div {
+            background-color: lightgray;
+            border: solid black 1px;
+            position: relative;
+            cursor: pointer
+        }
+        div.MenuLevel2 {
+            width: 150px;
+            display: none
+        }
+        div.MenuLevel2 > div {
+            background-color: lightgray;
+            border: solid black 1px;
+            cursor: pointer
+        }
+        div.MenuLevel1 > div:hover div.MenuLevel2 {
+            display: block;
+            position: absolute;
+            left: 80%;
+            top: 90%;
+            z-index: 1
+        }
+        .cl1{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class='MenuLevel1'>
+    <div class="cl1">Понидельник</div>
+    <div class="cl1">
+        Вторник
+    </div>
+    <div>
+        Среда
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div>Четверг</div>
+    <div>Пятница</div>
+    <div>Суббота</div>
+
+</div>
+
+
+
+</body>
+</html>
